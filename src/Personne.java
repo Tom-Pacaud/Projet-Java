@@ -1,22 +1,16 @@
 public class Personne {
 	
 	private String nom;
-	public String prenom;
-	protected int age;
+	private String prenom;
+	private int age;
+	private Date born;
 	
-	public Personne() {
-		
-		this.nom = "Anonyme";
-		this.prenom = "Anonyme";
-		this.age = -1;
-		
-	}
-	
-	public Personne(String nom, String prenom, int age) {
+	public Personne(String nom, String prenom, int age, Date born) {
 		
 		this.nom = nom;
 		this.prenom = prenom;
 		this.age = age;
+		this.born = born;
 		
 	}
 	
@@ -32,6 +26,10 @@ public class Personne {
 		return this.age;
 	}
 	
+	public Date getBorn() {
+		return this.born;
+	}
+	
 	public void setNom(String nom) {
 		this.nom = nom;
 	}
@@ -44,7 +42,12 @@ public class Personne {
 		this.age = age;
 	}
 	
+	public void setBorn(Date born) {
+		this.born = born;
+	}
+	
 	public void afficher(){
 		System.out.println(this.getNom() + " / " + this.getPrenom() + " / " + this.getAge() + " ans");
+		this.born.afficher();
 	}
 }

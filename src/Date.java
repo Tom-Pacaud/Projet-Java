@@ -9,13 +9,23 @@ public class Date {
 		if ( 0 < jours & jours < 32) {
 			this.jours = jours;
 		}
+		else {
+			System.out.println("Error : Date invalide");
+		}
 		
 		if (0 < mois & mois < 13) {
 			this.mois = mois;
 		}
+		else {
+			System.out.println("Error : Date invalide");
+		}
 		
 		this.annee = annee;
 		
+	}
+	
+	public void afficher() {
+		System.out.println("--> " + this.jours +" / " + this.mois + " / " + this.annee + " ");
 	}
 	
 }
