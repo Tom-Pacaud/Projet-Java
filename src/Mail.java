@@ -1,6 +1,5 @@
 public class Mail {
 	
-	private String numero;
 	private String email;
 	
 	public Mail(String email) {

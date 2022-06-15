@@ -1,27 +1,27 @@
 public class Date {
 	
-	private int jours;
-	private int mois;
-	private int annee;
+	private String jours;
+	private String mois;
+	private String annee;
 	
-	public Date(int jours, int mois, int annee){
+	public Date(String jours, String mois, String annee){
 		
-		if ( 0 < jours & jours < 32) {
-			this.jours = jours;
-		}
-		else {
-			System.out.println("Error : Date invalide");
-		}
-		
-		if (0 < mois & mois < 13) {
-			this.mois = mois;
-		}
-		else {
-			System.out.println("Error : Date invalide");
-		}
-		
+		this.jours = jours;
+		this.mois = mois;
 		this.annee = annee;
 		
+	}
+	
+	public String getJours() {
+		return this.jours;
+	}
+	
+	public String getMois() {
+		return this.mois;
+	}
+	
+	public String getAnnee() {
+		return this.annee;
 	}
 	
 	public void afficher() {

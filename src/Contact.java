@@ -13,12 +13,27 @@ public class Contact{
 		
 	}
 	
+	public Personne getPersonne() {
+		return this.personne;
+	}
+	
+	public Numero getNum() {
+		return this.numero;
+	}
+	
+	public Mail getMail() {
+		return this.email;
+	}
+	
 	public void afficher() {
 		
 		this.personne.afficher();
 		this.numero.afficher();
 		this.email.afficher();
+		System.out.println("---------------------------------");
 		
 	}
 	
+	
 }
+

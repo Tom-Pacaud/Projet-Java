@@ -2,10 +2,10 @@ public class Personne {
 	
 	private String nom;
 	private String prenom;
-	private int age;
+	private String age;
 	private Date born;
 	
-	public Personne(String nom, String prenom, int age, Date born) {
+	public Personne(String nom, String prenom, String age, Date born) {
 		
 		this.nom = nom;
 		this.prenom = prenom;
@@ -22,7 +22,7 @@ public class Personne {
 		return this.prenom;
 	}
 	
-	public int getAge() {
+	public String getAge() {
 		return this.age;
 	}
 	
@@ -38,7 +38,8 @@ public class Personne {
 		this.prenom = prenom;
 	}
 	
-	public void setAge(int age) {
+	public void setAge(String age) {
+		
 		this.age = age;
 	}
 	
